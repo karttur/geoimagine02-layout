@@ -4,6 +4,9 @@ Updated 29 Jan 2021
 
 @author: thomasgumbricht
 '''
+
+# Package application imports
+
 #from layout import mj_legends as mj_legends
 
 class ProcessLayout():
