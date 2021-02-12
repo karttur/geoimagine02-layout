@@ -5,11 +5,15 @@ Created on 14 feb 2012
 
 '''
 
-import geoimagine.gis.gis as mj_gis
+# Standard library imports
+
 import os
+
 import array as arr
+
 import subprocess
 
+import gis.gis as mj_gis
 
 import svgwrite
 
