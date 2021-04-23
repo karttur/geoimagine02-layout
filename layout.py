@@ -49,15 +49,11 @@ class ProcessLayout():
         
         elif self.pp.process.processid == 'AddMovieClock':
             
-            self._AddMovieClock()
-            
-        elif self.process.proc.processid.lower() == 'MovieClock':
-            
             self._MovieClock()
             
         else:
             
-            exitstr = 'ProcessLayout process %s not available' %(self.process.proc.processid)
+            exitstr = 'ProcessLayout process %s not available' %(self.pp.process.processid)
             
             exit(exitstr)
             
@@ -83,7 +79,20 @@ class ProcessLayout():
         
         for key in paletteD:
             
-            colorD[key] = dict (list (paletteD[key].__dict__.items() ) )
+            try:
+            
+                colorD[key] = dict (list (paletteD[key].__dict__.items() ) )
+                
+            except:
+                                        
+                exitstr = 'ERROR in setting color', key, self.pp.process.parameters.palette
+                
+                
+                print (exitstr)
+                
+                SNULLE
+                
+                exit(exitstr)
             
             #queryD['value'] = int(key)
             
